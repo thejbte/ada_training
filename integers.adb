@@ -18,4 +18,8 @@ begin
     Ada.Text_IO.Put_Line("Natural                 [" & Natural'Image(Natural'First)  & "] to [" & Natural'Image(Natural'lAST) &"]" );
     Ada.Text_IO.Put_Line("Positive                [" & Positive'Image(Positive'First)  & "] to [" & Positive'Image(Positive'lAST) &"]" );
     Ada.Text_IO.Put_Line("Long_Integer (64 bits)  [" & Long_Integer'Image(Long_Integer'First)  & "] to [" & Long_Integer'Image(Long_Integer'lAST) &"]" );
+
+    -- cast float to integer 
+    SomeInt := 44 + Integer( 27.87);  -- redondea
+    Ada.Text_IO.Put_Line(Integer'Image(SomeInt));
 end integers;
