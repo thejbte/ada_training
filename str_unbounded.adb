@@ -14,7 +14,7 @@ procedure str_unbounded is
     
     strVar1 : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.To_Unbounded_String("Hello, ");
     strVar2 : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.To_Unbounded_String("World");  -- variable : tipo := inicializacion
-
+    Char1   : character := 'z';
 begin
     Ada.Text_IO.Put_Line(Ada.Strings.Unbounded.To_String(strVar1)); 
     Ada.Strings.Unbounded.Append(strVar1, strVar2);     -- dest, source  -> destsource
@@ -24,5 +24,6 @@ begin
             Ada.Strings.Unbounded.Length(strVar1) -- get length
         )
     );
+    Ada.Text_IO.Put_Line(" A character is created: " & Char1);
 
 end str_unbounded;
