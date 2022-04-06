@@ -1,5 +1,5 @@
 -- [
---	procedure to add of two numbers
+--  Procedure to add of two numbers
 -- ]
 
 -- <
